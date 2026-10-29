@@ -80,3 +80,63 @@ ovládacích prvkov tohto arkádového automatu.
 
 Pri inom zapojení GPIO tlačidiel môže byť potrebné
 mapovanie upraviť.
+
+## Predvolené nastavenia Arcade-101
+
+Repozitár obsahuje aj konfiguráciu základného ovládania
+a zvuku arkádového automatu.
+
+### Ovládanie hlavnej ponuky Batocery
+
+Súbor:
+
+`batocera/emulationstation/gpio-controller.xml`
+
+Obsahuje mapovanie zariadenia GPIO Custom Controller 1:
+
+- joystick a navigácia v hlavnej ponuke
+- farebné arkádové tlačidlá
+- tlačidlo START a SELECT
+- tlačidlo HOTKEY
+
+Ide o výpis jednej sekcie z pôvodného `es_input.cfg`.
+Pri obnove je potrebné vložiť túto sekciu do existujúceho
+súboru `/userdata/system/configs/emulationstation/es_input.cfg`.
+Nenahrádzajte ním celý súbor.
+
+### Predvolené nastavenie zvuku
+
+Súbor:
+
+`batocera/arcade-settings.conf`
+
+Obsahuje:
+
+- zvukové zariadenie WM8960
+- hlasitosť 65 %
+- zapnutú hudbu v hlavnej ponuke
+- nastavenia ukončovania emulátorov
+
+Tieto riadky patria do:
+
+`/userdata/system/batocera.conf`
+
+Pred ich pridaním je potrebné zazálohovať existujúci súbor
+a skontrolovať prípadné duplicitné nastavenia.
+
+### Ukončovanie hier
+
+Na Arcade-101 používame kombináciu:
+
+**HOTKEY + zelené tlačidlo**
+
+Nastavenie bolo overené pre RetroArch a vybrané systémy,
+najmä MS-DOS a Nintendo NES.
+
+### Bezpečnosť
+
+Repozitár neobsahuje ROM hry, heslá ani celý súbor
+`batocera.conf`.
+
+Pred obnovením konfigurácie odporúčame vytvoriť zálohu
+pôvodných nastavení.
