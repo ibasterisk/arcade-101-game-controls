@@ -140,3 +140,77 @@ Repozitár neobsahuje ROM hry, heslá ani celý súbor
 
 Pred obnovením konfigurácie odporúčame vytvoriť zálohu
 pôvodných nastavení.
+
+## Duke Nukem – trilógia
+
+Na Arcade-101 boli otestované tieto hry:
+
+| Hra | Systém | Stav |
+| --- | --- | --- |
+| Duke Nukem 1 | MS-DOS | Funkčné vlastné ovládanie |
+| Duke Nukem 2 | MS-DOS | Funkčné predvolené ovládanie DOSBox Pure |
+| Duke Nukem 3D | MS-DOS | Hrateľné |
+
+### Duke Nukem 1 – ovládanie
+
+Overené ovládanie GPIO joysticku a arkádových tlačidiel:
+
+| Ovládací prvok | Funkcia | Kláves |
+| --- | --- | --- |
+| Joystick doľava | Pohyb doľava | D |
+| Joystick doprava | Pohyb doprava | G |
+| Joystick hore | Otváranie dverí | R |
+| Modré tlačidlo | Streľba | Numpad 4 |
+| Žlté tlačidlo | Skok | Numpad 5 |
+
+Funkčná konfigurácia:
+
+`retroarch/DOSBox-pure/DukeNukem1.pc.rmp`
+
+Na Batocere sa nachádza v adresári:
+
+`/userdata/system/configs/retroarch/config/remaps/DOSBox-pure/`
+
+Dôležité: pri testovaní sa ukázalo, že súbor
+`DukeNukem1.rmp` sa nenačítaval podľa očakávania.
+Po vytvorení súboru `DukeNukem1.pc.rmp` sa ovládanie
+vrátane otvárania dverí úspešne obnovilo aj po novom
+spustení hry.
+
+Pri obnove odporúčame použiť práve tento súbor.
+
+### Duke Nukem 2
+
+Hra používa spoločné mapovanie DOSBox Pure:
+
+`retroarch/DOSBox-pure/dosbox.rmp`
+
+Nie je potrebný samostatný herný remap.
+
+### Duke Nukem 3D
+
+Hra bola úspešne spustená a otestovaná na Raspberry Pi 3
+prostredníctvom DOSBox Pure.
+
+Samostatné mapovanie ovládania zatiaľ nebolo uložené
+v tomto repozitári.
+
+## DOOM 1 a DOOM 2
+
+Obe hry boli otestované na Arcade-101 s jadrom PrBoom.
+
+| Hra | Systém | Stav |
+| --- | --- | --- |
+| DOOM 1 Shareware | PrBoom | Funkčné |
+| DOOM 2: Hell on Earth | PrBoom | Funkčné |
+
+Pri oboch hrách bolo overené:
+
+- pohyb pomocou GPIO joysticku
+- streľba
+- otváranie dverí
+
+Nebolo potrebné vytvárať samostatné mapovanie ovládania.
+Obe hry používajú existujúce nastavenie RetroArchu.
+
+Repozitár neobsahuje herné WAD súbory.
