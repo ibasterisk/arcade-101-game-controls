@@ -21,6 +21,11 @@ Neobsahuje ROM hry, BIOS súbory ani heslá.
 | Wolfenstein 3D | MS-DOS | Vlastný remap |
 | Heretic | MS-DOS | padto.keys a vlastné remapy |
 | Dyna Blaster | MS-DOS | Vlastný remap |
+| Duke Nukem 1 | MS-DOS | Vlastný remap DukeNukem1.pc.rmp |
+| Duke Nukem 2 | MS-DOS | Spoločný profil DOSBox Pure |
+| Duke Nukem 3D | MS-DOS | Funkčné ovládanie |
+| DOOM 1 Shareware | PrBoom | Predvolené ovládanie |
+| DOOM 2: Hell on Earth | PrBoom | Predvolené ovládanie |
 
 ## Commander Keen 4
 
