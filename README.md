@@ -1,3 +1,5 @@
+[🇸🇰 Slovensky](README.md) | [🇬🇧 English](README_EN.md)
+
 # Arcade-101 – Game Controls
 
 Konfigurácie ovládania hier pre arkádový automat
@@ -219,3 +221,26 @@ Nebolo potrebné vytvárať samostatné mapovanie ovládania.
 Obe hry používajú existujúce nastavenie RetroArchu.
 
 Repozitár neobsahuje herné WAD súbory.
+
+## Aktivácia GPIO ovládača
+
+Na Waveshare Arcade-101-1P používame vlastné mapovanie
+GPIO pinov pre joystick a arkádové tlačidlá.
+
+Konfigurácia v súbore `/userdata/system/batocera.conf`:
+
+    controllers.gpio.enabled=1
+    controllers.gpio.args="map=5 gpio=16,5,27,12,6,4,22,23,24,25,26,17,-1"
+
+Tieto hodnoty aktivujú GPIO ovládač a definujú použité
+GPIO piny na Raspberry Pi 3 Model B.
+
+Konfigurácia je zálohovaná v repozitári v súbore:
+
+`batocera/arcade-settings.conf`
+
+**Upozornenie:** Nastavenie platí pre konkrétne zapojenie
+Arcade-101. Pri inom zapojení môže byť potrebná úprava GPIO pinov.
+
+Po obnove konfigurácie reštartujte Batoceru a overte
+funkčnosť joysticku a tlačidiel.
