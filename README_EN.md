@@ -1,4 +1,4 @@
-[🇸🇰 Slovensky](README.md) | [🇬🇧 English](README_EN.md)
+[![Slovensky](images/sk.png)](README.md) | [![English](images/en.png)](README_EN.md)
 
 # Arcade-101 – Game Controls
 
